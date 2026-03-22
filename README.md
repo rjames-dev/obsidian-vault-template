@@ -1,12 +1,18 @@
 # Claude Memory — Obsidian Vault Template
 
-This is the Obsidian vault template for use with [claude-memory](https://github.com/your-org/claude-memory).
+A pre-configured Obsidian vault that pairs with [claude-memory](https://github.com/rjames-dev/claude-memory) to give Claude Code persistent, structured memory across sessions. The vault provides the human-readable narrative layer; claude-memory provides the deep technical archive.
 
-## What This Is
+**Not sure if you need all of this?** Read [`Getting Started/When Memory Systems Help.md`](Getting%20Started/When%20Memory%20Systems%20Help.md) first — the vault alone (no claude-memory) is already useful for many workflows.
 
-A pre-configured Obsidian vault that pairs with claude-memory to give Claude Code
-persistent, structured memory across sessions. The vault provides the human-readable
-narrative layer; claude-memory provides the deep technical archive.
+## Getting Started
+
+Three guides are included in the `Getting Started/` folder:
+
+| Guide | What it covers |
+|---|---|
+| [When Memory Systems Help](Getting%20Started/When%20Memory%20Systems%20Help.md) | Honest assessment of when each layer earns its complexity |
+| [Deployment Patterns](Getting%20Started/Deployment%20Patterns.md) | Vault only vs full stack vs production server — which fits you |
+| [Your First Project](Getting%20Started/Your%20First%20Project.md) | How to set up a project folder and get Claude oriented to it |
 
 ## Setup
 
@@ -16,10 +22,18 @@ You do not need to clone it manually.
 If you want to set it up manually:
 
 ```bash
-git clone <this-repo> ~/code/vault
+git clone https://github.com/rjames-dev/obsidian-vault-template ~/code/vault
 ```
 
 Then open Obsidian → **Open folder as vault** → point to `~/code/vault`.
+
+> **Important:** This template repo is a starting point, not your vault's home. Once cloned, detach from this remote and push to your own private repository so your vault is portable and personal:
+> ```bash
+> cd ~/code/vault
+> git remote remove origin
+> git remote add origin git@github.com:<you>/<your-vault>.git
+> git push -u origin main
+> ```
 
 ## Folder Structure
 
